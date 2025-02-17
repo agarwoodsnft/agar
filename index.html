@@ -34,16 +34,18 @@
             text-transform: uppercase;
             letter-spacing: 2px;
         }
-	nav {
-	    width: 40%;
-	    overflow: hidden; /* This prevents any overflow beyond the container */
-	}
+
+        nav {
+            width: 66%;
+            overflow: hidden;
+        }
 
         nav ul {
             list-style-type: none;
             display: flex;
             padding: 5;
             margin: 0;
+            justify-content: center;
         }
 
         nav ul li {
@@ -147,6 +149,27 @@
 
         .social-links a:hover {
             color: #fff;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            nav {
+                width: 100%; /* Full width on smaller screens */
+                padding: 10px; /* Extra padding for better touch areas */
+            }
+
+            nav ul {
+                flex-direction: column; /* Stack the items vertically */
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 10px 0; /* Adds space between stacked items */
+            }
+
+            nav ul li a {
+                font-size: 1.1rem; /* Smaller font size for mobile */
+            }
         }
     </style>
 </head>
