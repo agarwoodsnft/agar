@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGARWOOD NFT Game</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #1f1f1f, #222222);
+            color: white;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: #000000b3;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 10;
+        }
+
+        #logo {
+            font-size: 2rem;
+            color: #00FF9D;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+	nav {
+	    width: 40%;
+	    overflow: hidden; /* This prevents any overflow beyond the container */
+	}
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            padding: 5;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+            position: relative;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.3rem;
+            letter-spacing: 1px;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #00FF9D;
+            transform: scale(1.1);
+        }
+
+        nav ul li a:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            width: 100%;
+            height: 2px;
+            background-color: #00FF9D;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 0.3s ease;
+        }
+
+        nav ul li a:hover:before {
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+
+        section {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-top: 80px;
+        }
+
+        h2 {
+            color: #00FF9D;
+            font-size: 2.5rem;
+            text-align: center;
+        }
+
+        #homepage {
+            padding: 50px;
+            text-align: center;
+            background: #1c1c1c;
+            border-radius: 10px;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        #homepage p {
+            font-size: 1.1rem;
+            margin: 20px 0;
+        }
+
+        footer {
+            background-color: #111;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        footer ul li {
+            margin: 5px 0;
+        }
+
+        footer ul li a {
+            color: #00FF9D;
+            text-decoration: none;
+        }
+
+        footer ul li a:hover {
+            color: #fff;
+        }
+
+        .section-container {
+            margin-top: 100px;
+        }
+
+        .social-links a {
+            font-size: 1.1rem;
+            color: #00FF9D;
+            text-decoration: none;
+            margin: 10px;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div id="logo">AGARWOOD</div>
+    <nav>
+        <ul>
+            <li><a href="#homepage">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#tokenomics">Tokenomics</a></li>
+            <li><a href="#roadmap">Roadmap</a></li>
+            <li><a href="#community">Community</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="homepage">
+    <h2>Welcome to AGARWOOD NFT Game</h2>
+    <p>Start your journey in the AGARWOOD universe, where you can stake unique NFTs, mine AGAR tokens, and craft your way to success!</p>
+    <p>Explore our <a href="#about">about</a>, check out our <a href="#tokenomics">tokenomics</a>, and join the adventure today!</p>
+</section>
+
+<section id="about">
+    <h2>About AGARWOOD</h2>
+    <p>AGARWOOD is an innovative Web3 NFT mining game built on the WAX blockchain, where players harvest AGAR tokens by owning and staking unique Agarwood NFTs. The game features a structured economy with sustainable tokenomics, crafting mechanics, and an engaging play-to-earn model.</p>
+</section>
+
+<section id="tokenomics">
+    <h2>Tokenomics</h2>
+    <p>Total Supply: 300,000,000 AGAR tokens</p>
+    <p>Mining Rewards: Distributed through NFT staking.</p>
+    <p>Crafting & Upgrading: Burn mechanism to balance the economy.</p>
+    <p>Marketplace & Transactions: AGAR used for NFT trading and upgrades.</p>
+</section>
+
+<section id="roadmap">
+    <h2>Roadmap</h2>
+    <h3>Q1 2025 – Foundation Phase</h3>
+    <ul>
+        <li>Game concept & economy finalization</li>
+        <li>Tokenomics & NFT system design</li>
+        <li>Community launch (Twitter, Discord)</li>
+    </ul>
+
+    <h3>Q2 2025 – Development & Smart Contracts</h3>
+    <ul>
+        <li>Development of NFT mining mechanics</li>
+        <li>Integration of WAXDAO staking</li>
+        <li>Smart contract deployment & testing</li>
+    </ul>
+
+    <h3>Q3 2025 – Beta Launch & Marketplace</h3>
+    <ul>
+        <li>Closed Beta for selected testers</li>
+        <li>NFT pack sales & trading marketplace</li>
+        <li>Public leaderboard implementation</li>
+    </ul>
+
+    <h3>Q4 2025 – Full Release & Expansion</h3>
+    <ul>
+        <li>Official AGARWOOD game launch</li>
+        <li>Marketing & strategic partnerships</li>
+        <li>Community DAO governance introduction</li>
+    </ul>
+</section>
+
+<section id="community">
+    <h2>Join Our Community</h2>
+    <p>Stay updated with the latest news, updates, and more by following us on social media!</p>
+    <div class="social-links">
+        <a href="https://x.com/agarwoodsnft" target="_blank">Twitter</a>
+        <a href="https://discord.gg/gfuJFABSVA" target="_blank">Discord</a>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 AGARWOOD NFT Game</p>
+</footer>
+
+</body>
+</html>
